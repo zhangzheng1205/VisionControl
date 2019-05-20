@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DPlot</class>
+ <widget class="QWidget" name="DPlot">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>695</width>
+    <height>457</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="9,0">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QCustomPlot" name="plot" native="true"/>
+   </item>
+   <item>
+    <widget class="QWidget" name="verticalWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+}
+QPushButton {
+	font: 12pt &quot;微软雅黑&quot;;
+	color: rgba(0, 255, 0, 250);
+	background-color: rgba(85, 0, 255, 100);
+	width: 60px;
+    height: 30px;
+	border-radius:10px;
+	border: 0px solid red;
+}
+QPushButton:hover:!pressed{
+	font: 12pt &quot;微软雅黑&quot;;
+	color: rgba(0, 255, 0, 250);
+	background-color: rgba(85, 0, 255, 200);
+}
+QPushButton:hover:pressed{
+	
+	font: 75 12pt &quot;微软雅黑&quot;;
+	color: rgba(0, 255, 0, 250);
+	background-color: rgba(85, 0, 255, 150);
+}
+QCheckBox
+{
+	color: rgba(0, 0, 255, 180);
+	background-color: rgba(255, 255, 255, 150);
+    font-family:Consolas;
+    height:30px;
+    font-size:14px;
+    border-radius:5px;
+}
+QCheckBox::indicator
+{
+	width: 20px;
+    height: 20px;
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pReset">
+        <property name="text">
+         <string>重置绘图</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pSave">
+        <property name="text">
+         <string>保存截图</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pSaveData">
+        <property name="text">
+         <string>保存数据</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_X">
+        <property name="text">
+         <string>X-Auto</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_Y">
+        <property name="text">
+         <string>Y-Auto</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_Y2">
+        <property name="text">
+         <string>Y2-Auto</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

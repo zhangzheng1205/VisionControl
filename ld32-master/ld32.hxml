@@ -1,0 +1,6 @@
+-cp src
+-js ld32.js
+-main Game
+-lib heaps
+-lib castle
+-dce full

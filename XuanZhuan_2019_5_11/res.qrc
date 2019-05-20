@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/login">
+        <file>res/gray.png</file>
+        <file>res/green.png</file>
+        <file>res/red.png</file>
+        <file>res/blue.png</file>
+    </qresource>
+</RCC>
